@@ -9,4 +9,4 @@ def randomNumber(number):
 
 for i in range(10):
     print(name_people[randomNumber(len(name_people) - 1)],": ",name_number[randomNumber(len(name_number) - 1)], "------>>>> ",name_color[randomNumber(len(name_color) - 1)])
-print("I changed this from PyCharm Community IDE")
+print("I changed this from PyCharm Community Integrated Developement Environment")
