@@ -19,7 +19,7 @@ while True:
         print_inst()
         continue
     elif choice == 2:
-        new_name = input("Enter a Itme to add: ")
+        new_name = input("Enter a Item to add: ")
         add_item(new_name)
         print(new_name, " is added to the list")
     elif choice == 3:
