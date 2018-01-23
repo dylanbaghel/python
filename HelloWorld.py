@@ -1,12 +1,33 @@
-import random
+list = []
 
-name_people = ["Abhishek","Baghel","Akash","Dylan","Vikas"]
-name_number = [11,22,33,44,55,66,77,88]
-name_color = ['Red','Green','Blue','Yello','Magenta','violet']
+def add_item(name):
+    list.append(name)
 
-def randomNumber(number):
-    return random.randint(1,number)
+def remove_item(name):
+    list.remove(name)
 
-for i in range(10):
-    print(name_people[randomNumber(len(name_people) - 1)],": ",name_number[randomNumber(len(name_number) - 1)], "------>>>> ",name_color[randomNumber(len(name_color) - 1)])
-print("I changed this from PyCharm Community Integrated Developement Environment")
+def print_list():
+    print(list)
+def print_inst():
+    print("1. print Instruction\n2. Add Item\n3. Remove Item\n4.Quit\n5.Print List")
+
+print("1. print Instruction\n2. Add Item\n3. Remove Item\n4.Quit\n5.Print List")
+
+while True:
+    choice = int(input("Enter Your Choice: "))
+    if choice == 1:
+        print_inst()
+        continue
+    elif choice == 2:
+        new_name = input("Enter a Name to add: ")
+        add_item(new_name)
+        print(new_name, " is added to the list")
+    elif choice == 3:
+        del_name = input("Enter a Item to remove: ")
+        old_name = del_name
+        remove_item(del_name)
+        print(old_name, " is deleted")
+    elif choice == 4:
+        break
+    elif choice == 5:
+        print_list()
